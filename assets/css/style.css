@@ -31035,3 +31035,114 @@ span.select2-selection.select2-selection--single:focus {
     border-radius: 5px;
 }
 
+/* table section */
+
+
+
+
+/* Style for table */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th, .table td {
+  padding: 12px;
+  text-align: left;
+}
+
+/* Highlight even rows */
+table tr:nth-child(even) {
+  background-color: #BEF2F5;
+}
+
+/* Header row styling */
+.row-header {
+  background-color: #000;
+  color: #fff;
+  font-weight: 600;
+}
+
+/* Styling header cells */
+.table th {
+  font-weight: 600;
+  background-color: #BEF2F5;
+}
+
+/* For responsiveness */
+@media screen and (max-width: 550px) {
+
+  .table th, .table td {
+    display: block;
+    text-align: center;
+  }
+
+  .table td {
+    padding: 10px;
+    position: relative;
+  }
+
+  .table td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 10px;
+    font-weight: bold;
+  }
+}
+
+/* For smaller devices like mobile */
+@media screen and (max-width: 480px) {
+  .table td {
+    padding: 8px;
+  }
+}
+
+
+  /* vehicle */
+
+  .vehicle-item {
+    padding: 30px;
+    text-align: center;
+    background: #F4F5F8;
+    transition: 0.5s ease;
+}
+
+
+.vehicle-item:hover {
+    background: #1CA8CB;
+}
+
+.vehicle-item.active {
+    background: #1CA8CB;
+}
+
+.vehicle-item:hover,
+.vehicle-item.active,
+.vehicle-item:hover h4,
+.vehicle-item.active h4 {
+    color: #fff !important; 
+}
+
+.vehicle-item:hover .vehicle-i,
+.vehicle-item.active .vehicle-i {
+    color: #fff !important; 
+}
+
+.vehicle-i {
+    color: #1CA8CB;
+}
+
+.vehicle-btn {
+    background-color: #1CA8CB !important;
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+.vehicle-btn:hover{
+    background-color: white !important;
+   color: #1CA8CB !important;
+}
