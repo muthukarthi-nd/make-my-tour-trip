@@ -31052,13 +31052,17 @@ span.select2-selection.select2-selection--single:focus {
 }
 
 /* Highlight even rows */
+table tr:nth-child(odd) {
+  background-color: #00A1DE;
+  color: white !important;
+}
 table tr:nth-child(even) {
-  background-color: #BEF2F5;
+  background-color: white;
+  color: #000000;
 }
 
 /* Header row styling */
 .row-header {
-  background-color: #000;
   color: #fff;
   font-weight: 600;
 }
@@ -31066,7 +31070,8 @@ table tr:nth-child(even) {
 /* Styling header cells */
 .table th {
   font-weight: 600;
-  background-color: #BEF2F5;
+  background-color: #00A1DE;
+  color: #000000;
 }
 
 /* For responsiveness */
